@@ -1,11 +1,12 @@
 {
   "name": "vireon-digital-portfolio",
   "version": "1.0.0",
+  "private": true,
   "description": "Vireon Digital - Next-Gen Outsourced Sales, Digital Marketing & AI Growth Engine",
-  "main": "index.html",
   "scripts": {
-    "dev": "npx serve -l 3000 .",
-    "start": "npx serve -l 3000 ."
+    "build": "echo 'Static build complete'",
+    "dev": "node server.js",
+    "start": "node server.js"
   },
   "keywords": [
     "vireon-digital",
