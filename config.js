@@ -50,7 +50,7 @@ const VIREON_CONFIG = {
       category: "sales",
       duration: "0:45",
       views: "142K",
-      thumbnail: "assets/images/hero-ecosystem.jpg",
+      thumbnail: "assets/images/thumb-showcase-1.jpg",
       localSrc: "assets/videos/vireon-showcase-1.mp4",
       gdriveId: "1RHHxykhGWWMD3Lo0r1Yvz7P4LKZ7WlrJ",
       highlight: "Generated $3.2M pipeline for B2B tech firm"
@@ -62,7 +62,7 @@ const VIREON_CONFIG = {
       category: "creator",
       duration: "0:38",
       views: "890K",
-      thumbnail: "assets/images/hero-ecosystem.jpg",
+      thumbnail: "assets/images/thumb-showcase-2.jpg",
       localSrc: "assets/videos/vireon-showcase-2.mp4",
       gdriveId: "1RW3MEemueowuFSJHqmyLDJ_p0gBpCwk0",
       highlight: "Scaled founder from 2K to 240K followers in 90 days"
@@ -74,7 +74,7 @@ const VIREON_CONFIG = {
       category: "ai",
       duration: "0:52",
       views: "310K",
-      thumbnail: "assets/images/ai-sales-agent.jpg",
+      thumbnail: "assets/images/thumb-showcase-3.jpg",
       localSrc: "assets/videos/vireon-showcase-3.mp4",
       gdriveId: "1IJJ4xWwU_bJyxc8YpoNBBRBoicc7w6bK",
       highlight: "84% response rate with sub-minute lead outreach"
