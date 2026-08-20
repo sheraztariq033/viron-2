@@ -1,0 +1,329 @@
+/* ==========================================================================
+   VIREON DIGITAL - CORE DESIGN SYSTEM & TOKENS
+   Futuristic / Cyber-Neo Dark Aesthetic with Glowing Cyan & Teal Accents
+   Fully Responsive for All Devices (Mobile 320px+, Tablet, Desktop)
+   ========================================================================== */
+
+:root {
+  /* Brand Color Palette */
+  --bg-space: #04070e;
+  --bg-deep: #070d18;
+  --bg-card: rgba(11, 20, 38, 0.7);
+  --bg-card-hover: rgba(16, 29, 54, 0.85);
+  --bg-glass: rgba(14, 26, 48, 0.45);
+  --bg-glass-heavy: rgba(7, 13, 24, 0.92);
+
+  /* Primary Accent: Neon Cyan & Teal */
+  --neon-cyan: #00f0ff;
+  --neon-teal: #00c49f;
+  --neon-emerald: #10b981;
+  --neon-blue: #0072f5;
+  --neon-purple: #8b5cf6;
+  --neon-glow: rgba(0, 240, 255, 0.35);
+  --teal-glow: rgba(0, 196, 159, 0.35);
+
+  /* Text Colors */
+  --text-pure: #ffffff;
+  --text-bright: #f1f5f9;
+  --text-muted: #94a3b8;
+  --text-dim: #64748b;
+  --text-cyan: #38bdf8;
+
+  /* Border & Gradients */
+  --border-subtle: rgba(255, 255, 255, 0.08);
+  --border-cyan: rgba(0, 240, 255, 0.22);
+  --border-cyan-glow: rgba(0, 240, 255, 0.5);
+  --border-teal: rgba(0, 196, 159, 0.25);
+
+  --grad-primary: linear-gradient(135deg, #00f0ff 0%, #00c49f 50%, #009688 100%);
+  --grad-cyan-blue: linear-gradient(135deg, #00f0ff 0%, #0072f5 100%);
+  --grad-dark-card: linear-gradient(180deg, rgba(16, 28, 52, 0.8) 0%, rgba(7, 13, 24, 0.9) 100%);
+  --grad-glow: radial-gradient(circle at 50% 0%, rgba(0, 240, 255, 0.15) 0%, transparent 70%);
+
+  /* Typography */
+  --font-heading: 'Outfit', 'Space Grotesk', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-mono: 'Space Grotesk', monospace;
+  --font-body: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+
+  /* Shadows & Elevation */
+  --shadow-neon: 0 0 25px rgba(0, 240, 255, 0.25);
+  --shadow-teal: 0 0 25px rgba(0, 196, 159, 0.25);
+  --shadow-card: 0 15px 35px -5px rgba(0, 0, 0, 0.5), 0 0 0 1px var(--border-cyan);
+  --shadow-card-hover: 0 20px 45px -5px rgba(0, 240, 255, 0.15), 0 0 20px rgba(0, 240, 255, 0.3), 0 0 0 1px var(--neon-cyan);
+
+  /* Layout */
+  --max-w: 1280px;
+  --radius-sm: 8px;
+  --radius-md: 14px;
+  --radius-lg: 22px;
+  --radius-xl: 32px;
+  --radius-full: 9999px;
+
+  --transition-fast: 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+  --transition-smooth: 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+  --transition-slow: 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* ==========================================================================
+   CSS RESET & BASE
+   ========================================================================== */
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+  background-color: var(--bg-space);
+  color: var(--text-bright);
+  font-family: var(--font-body);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+  width: 100%;
+}
+
+body {
+  min-height: 100vh;
+  min-height: 100dvh;
+  position: relative;
+  background: radial-gradient(circle at 50% 0%, #0d1e38 0%, #04070e 65%);
+  color: var(--text-bright);
+  line-height: 1.6;
+  overflow-x: hidden;
+  width: 100%;
+}
+
+/* Custom Cyber Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+@media (min-width: 768px) {
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+}
+::-webkit-scrollbar-track {
+  background: var(--bg-space);
+}
+::-webkit-scrollbar-thumb {
+  background: #1e293b;
+  border-radius: 4px;
+  border: 1px solid var(--border-cyan);
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--neon-cyan);
+  box-shadow: 0 0 10px var(--neon-cyan);
+}
+
+/* Selection Highlight */
+::selection {
+  background: var(--neon-cyan);
+  color: #04070e;
+}
+
+img, svg, video {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  transition: color var(--transition-fast);
+}
+
+button, input, select, textarea {
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+/* ==========================================================================
+   UTILITY & LAYOUT CONTAINERS
+   ========================================================================== */
+
+.container {
+  width: 100%;
+  max-width: var(--max-w);
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+@media (min-width: 480px) {
+  .container {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
+}
+
+.section {
+  position: relative;
+  padding: 4rem 0;
+  z-index: 2;
+  overflow: hidden;
+}
+
+@media (min-width: 768px) {
+  .section {
+    padding: 6rem 0;
+  }
+}
+
+@media (min-width: 1024px) {
+  .section {
+    padding: 7.5rem 0;
+  }
+}
+
+/* Section Header Styles */
+.section-header {
+  text-align: center;
+  max-width: 760px;
+  margin: 0 auto 2.5rem auto;
+}
+
+@media (min-width: 768px) {
+  .section-header {
+    margin-bottom: 3.5rem;
+  }
+}
+
+.section-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.3rem 0.85rem;
+  background: rgba(0, 240, 255, 0.08);
+  border: 1px solid var(--border-cyan);
+  border-radius: var(--radius-full);
+  color: var(--neon-cyan);
+  font-family: var(--font-mono);
+  font-size: 0.76rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+  box-shadow: 0 0 15px rgba(0, 240, 255, 0.15);
+  max-width: 100%;
+}
+
+@media (min-width: 640px) {
+  .section-tag {
+    font-size: 0.82rem;
+    padding: 0.35rem 1rem;
+    margin-bottom: 1.25rem;
+  }
+}
+
+.section-tag .dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: var(--neon-cyan);
+  box-shadow: 0 0 8px var(--neon-cyan);
+  animation: pulseDot 2s infinite;
+}
+
+.section-title {
+  font-family: var(--font-heading);
+  font-size: clamp(1.75rem, 5.5vw, 3.25rem);
+  font-weight: 800;
+  line-height: 1.15;
+  color: var(--text-pure);
+  margin-bottom: 1rem;
+  letter-spacing: -0.02em;
+  word-break: break-word;
+  overflow-wrap: break-word;
+}
+
+.section-title .text-gradient {
+  background: var(--grad-primary);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+}
+
+.section-desc {
+  font-size: clamp(0.92rem, 2vw, 1.1rem);
+  color: var(--text-muted);
+  line-height: 1.6;
+}
+
+/* Text Gradient Helpers */
+.text-cyan {
+  color: var(--neon-cyan);
+}
+
+.text-teal {
+  color: var(--neon-teal);
+}
+
+.text-gradient {
+  background: var(--grad-primary);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-glow {
+  text-shadow: 0 0 15px rgba(0, 240, 255, 0.5);
+}
+
+/* Background Grid Overlay */
+.cyber-grid-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: 
+    linear-gradient(to right, rgba(0, 240, 255, 0.03) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(0, 240, 255, 0.03) 1px, transparent 1px);
+  background-size: 30px 30px;
+  pointer-events: none;
+  z-index: 1;
+  mask-image: radial-gradient(ellipse at 50% 50%, black 40%, transparent 80%);
+}
+
+@media (min-width: 768px) {
+  .cyber-grid-bg {
+    background-size: 40px 40px;
+  }
+}
+
+/* Canvas Background */
+#bg-canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 0;
+  pointer-events: none;
+}

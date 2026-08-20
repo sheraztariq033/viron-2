@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="vireonCyanGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00F0FF" />
+      <stop offset="50%" stop-color="#00C49F" />
+      <stop offset="100%" stop-color="#009688" />
+    </linearGradient>
+    <linearGradient id="vireonDarkGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1E293B" />
+      <stop offset="100%" stop-color="#0B132B" />
+    </linearGradient>
+    <linearGradient id="vireonGlowGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38EF7D" />
+      <stop offset="100%" stop-color="#11998E" />
+    </linearGradient>
+    <filter id="neonGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- BACKGROUND GLOW (Subtle) -->
+  <circle cx="250" cy="180" r="160" fill="#00F0FF" opacity="0.04" filter="blur(30px)" />
+
+  <!-- VIREON GEOMETRIC BIRD ICON -->
+  <g transform="translate(250, 160) scale(1.15)">
+    <!-- Dark Navy Left Wing Layers -->
+    <path d="M-65 -45 L-20 -10 L-35 5 L-80 -25 Z" fill="url(#vireonDarkGrad)" />
+    <path d="M-55 -15 L-10 15 L-25 35 L-70 10 Z" fill="#0E1E38" />
+    <path d="M-35 25 L-2 42 L-15 62 L-48 45 Z" fill="#1C2F4D" />
+    <path d="M-2 42 L65 -75 L25 15 Z" fill="url(#vireonDarkGrad)" />
+
+    <!-- Teal / Cyan Main Bird Body & Dynamic Wings -->
+    <!-- Lower V Tail -->
+    <path d="M-10 50 L-2 42 L25 15 L-5 95 Z" fill="#009688" />
+    
+    <!-- Central Cyan Torso & Head -->
+    <path d="M-2 42 L-10 -5 L15 -25 L25 15 Z" fill="url(#vireonCyanGrad)" />
+    
+    <!-- Bird Head & Beak -->
+    <path d="M15 -25 L40 -40 L50 -35 L45 -22 L25 -15 Z" fill="url(#vireonCyanGrad)" />
+    
+    <!-- Right Ascending Wing -->
+    <path d="M15 -25 L75 -70 L45 -10 Z" fill="#00F0FF" />
+    <path d="M-10 -5 L-55 -85 L-15 -35 Z" fill="url(#vireonCyanGrad)" />
+    <path d="M-15 -35 L-25 -95 L15 -25 Z" fill="#00E5FF" />
+    <path d="M-25 -95 L-60 -80 L-10 -5 Z" fill="#00B4D8" />
+  </g>
+
+  <!-- BRAND NAME: VIREON -->
+  <g fill="#FFFFFF" font-family="'Outfit', 'Space Grotesk', 'Montserrat', sans-serif" font-weight="800">
+    <!-- V -->
+    <path d="M105 320 L125 320 L145 375 L165 320 L185 320 L155 395 L135 395 Z" fill="#FFFFFF" />
+    <!-- I -->
+    <path d="M195 320 L212 320 L212 395 L195 395 Z" fill="#FFFFFF" />
+    <!-- R -->
+    <path d="M225 320 L260 320 C272 320 280 328 280 340 C280 350 273 357 263 359 L283 395 L263 395 L245 362 L242 362 L242 395 L225 395 Z M242 335 L242 348 L257 348 C261 348 264 345 264 341.5 C264 338 261 335 257 335 Z" fill="#FFFFFF" />
+    
+    <!-- E (Three Stylized Neon Teal/Cyan Bars) -->
+    <rect x="290" y="322" width="48" height="15" rx="3" fill="#00F0FF" />
+    <rect x="290" y="350" width="48" height="15" rx="3" fill="#00C49F" />
+    <rect x="290" y="378" width="48" height="15" rx="3" fill="#009688" />
+
+    <!-- O -->
+    <path d="M380 320 C405 320 420 336 420 358 C420 380 405 396 380 396 C355 396 340 380 340 358 C340 336 355 320 380 320 Z M380 336 C366 336 358 346 358 358 C358 370 366 380 380 380 C394 380 402 370 402 358 C402 346 394 336 380 336 Z" fill="#FFFFFF" />
+    
+    <!-- N -->
+    <path d="M430 320 L448 320 L475 365 L475 320 L492 320 L492 395 L474 395 L447 350 L447 395 L430 395 Z" fill="#FFFFFF" />
+  </g>
+
+  <!-- SUBTITLE: — DIGITAL — -->
+  <g transform="translate(250, 428)">
+    <line x1="-190" y1="0" x2="-100" y2="0" stroke="#00C49F" stroke-width="2.5" stroke-linecap="round" />
+    <text x="0" y="5" font-family="'Space Grotesk', 'Outfit', sans-serif" font-size="20" font-weight="700" letter-spacing="14" fill="#00F0FF" text-anchor="middle">DIGITAL</text>
+    <line x1="100" y1="0" x2="190" y2="0" stroke="#00C49F" stroke-width="2.5" stroke-linecap="round" />
+  </g>
+
+  <!-- TAGLINE: Growing Brands Through Social Media -->
+  <g transform="translate(250, 462)">
+    <line x1="-160" y1="-2" x2="-135" y2="-2" stroke="#64748B" stroke-width="1.5" stroke-dasharray="4,2" />
+    <text x="0" y="2" font-family="'Plus Jakarta Sans', sans-serif" font-size="12.5" font-weight="600" letter-spacing="2.5" fill="#94A3B8" text-anchor="middle">GROWING BRANDS THROUGH SOCIAL MEDIA</text>
+    <line x1="135" y1="-2" x2="160" y2="-2" stroke="#64748B" stroke-width="1.5" stroke-dasharray="4,2" />
+  </g>
+</svg>

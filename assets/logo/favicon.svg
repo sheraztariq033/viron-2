@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120">
+  <defs>
+    <linearGradient id="birdCyanFav" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00F0FF" />
+      <stop offset="60%" stop-color="#00C49F" />
+      <stop offset="100%" stop-color="#009688" />
+    </linearGradient>
+    <linearGradient id="birdDarkFav" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1E293B" />
+      <stop offset="100%" stop-color="#0B132B" />
+    </linearGradient>
+  </defs>
+  <rect width="120" height="120" rx="28" fill="#060B13" />
+  <rect width="120" height="120" rx="28" fill="none" stroke="#00F0FF" stroke-width="2" stroke-opacity="0.4" />
+  <g transform="translate(60, 56) scale(0.65)">
+    <path d="M-65 -45 L-20 -10 L-35 5 L-80 -25 Z" fill="url(#birdDarkFav)" />
+    <path d="M-55 -15 L-10 15 L-25 35 L-70 10 Z" fill="#0E1E38" />
+    <path d="M-35 25 L-2 42 L-15 62 L-48 45 Z" fill="#1C2F4D" />
+    <path d="M-2 42 L65 -75 L25 15 Z" fill="url(#birdDarkFav)" />
+    <path d="M-10 50 L-2 42 L25 15 L-5 95 Z" fill="#009688" />
+    <path d="M-2 42 L-10 -5 L15 -25 L25 15 Z" fill="url(#birdCyanFav)" />
+    <path d="M15 -25 L40 -40 L50 -35 L45 -22 L25 -15 Z" fill="url(#birdCyanFav)" />
+    <path d="M15 -25 L75 -70 L45 -10 Z" fill="#00F0FF" />
+    <path d="M-10 -5 L-55 -85 L-15 -35 Z" fill="url(#birdCyanFav)" />
+    <path d="M-15 -35 L-25 -95 L15 -25 Z" fill="#00E5FF" />
+    <path d="M-25 -95 L-60 -80 L-10 -5 Z" fill="#00B4D8" />
+  </g>
+</svg>

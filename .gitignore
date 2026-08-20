@@ -1,0 +1,6 @@
+# Dependencies & binaries
+node_modules/
+cloudflared.exe
+*.log
+.DS_Store
+Thumbs.db

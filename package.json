@@ -1,0 +1,19 @@
+{
+  "name": "vireon-digital-portfolio",
+  "version": "1.0.0",
+  "description": "Vireon Digital - Next-Gen Outsourced Sales, Digital Marketing & AI Growth Engine",
+  "main": "index.html",
+  "scripts": {
+    "dev": "npx serve -l 3000 .",
+    "start": "npx serve -l 3000 ."
+  },
+  "keywords": [
+    "vireon-digital",
+    "outsourced-sales",
+    "digital-marketing",
+    "ai-automation",
+    "creator-growth"
+  ],
+  "author": "Vireon Digital",
+  "license": "MIT"
+}
