@@ -28,8 +28,9 @@ const VIREON_CONFIG = {
     location: "Jaranwala Road, Lal Pulli, Sharqpur Sharif",
     address: "Jaranwala Road, Lal Pulli, Sharqpur Sharif",
     
-    // Email
-    email: "growth@vireondigital.com",
+    // Email & Form Forwarding Destination
+    email: "sam.nielson428@gmail.com",
+    formRecipientEmail: "sam.nielson428@gmail.com",
     
     // Official Social Links provided by user
     instagram: "https://www.instagram.com/digital.vireon?igsh=MWlnd3VnNGc5bXNhYw%3D%3D&igsi=MWlnd3VnNGc5bXNhYw%3D%3D",

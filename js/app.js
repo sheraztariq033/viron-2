@@ -120,21 +120,24 @@ function initFormHandler() {
     );
     const waUrl = `https://wa.me/${phone}?text=${waText}`;
 
-    // Background Email Dispatch via FormSubmit API
+    // Background Email Dispatch via FormSubmit API directly to sam.nielson428@gmail.com
+    const recipientEmail = cfg?.formRecipientEmail || cfg?.email || 'sam.nielson428@gmail.com';
     try {
-      fetch('https://formsubmit.co/ajax/growth@vireondigital.com', {
+      fetch(`https://formsubmit.co/ajax/${recipientEmail}`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
           'Accept': 'application/json'
         },
         body: JSON.stringify({
-          Name: name,
-          Email: email,
-          Service: service,
-          Details: details,
-          _subject: `🔥 New Growth Inquiry from ${name} (${service})`,
-          _captcha: 'false'
+          'Client Name': name,
+          'Work Email': email,
+          'Selected Service': service,
+          'Goals & Current Revenue': details,
+          '_subject': `🔥 New Vireon Lead: ${name} — ${service}`,
+          '_replyto': email,
+          '_captcha': 'false',
+          '_template': 'table'
         })
       }).catch(() => {});
     } catch(err) {
