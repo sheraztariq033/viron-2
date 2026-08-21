@@ -17,12 +17,16 @@ const VIREON_CONFIG = {
   
   contact: {
     // WhatsApp direct link with pre-filled message
-    whatsappNumber: "+1234567890", // Update with your actual WhatsApp phone number (with country code)
-    whatsappMessage: "Hi Vireon Digital team! I'm interested in scaling my sales, digital marketing & AI growth systems. Let's discuss.",
+    whatsappNumber: "+12494867256",
+    whatsappMessage: "Hi Vireon Digital team! I'm interested in scaling my brand, AI commercials, and growth systems. Let's discuss.",
     
     // Direct Phone Call
-    phoneNumber: "+1 (800) 847-3660", // Display format
-    phoneRaw: "+18008473660", // tel: link format
+    phoneNumber: "+1 (249) 486-7256",
+    phoneRaw: "+12494867256",
+    
+    // Location / Address
+    location: "Jaranwala Road, Lal Pulli, Sharqpur Sharif",
+    address: "Jaranwala Road, Lal Pulli, Sharqpur Sharif",
     
     // Email
     email: "growth@vireondigital.com",
@@ -45,39 +49,39 @@ const VIREON_CONFIG = {
   videos: [
     {
       id: "video-1",
-      title: "Outsourced Sales & Pipeline Engineering",
-      subtitle: "High-ticket appointment generation & closing infrastructure in action.",
-      category: "sales",
+      title: "From Idea to Reality: AI Cinema & Commercial Storytelling",
+      subtitle: "Films, commercials, music videos & campaigns that once needed massive budgets—brought to life from pure imagination.",
+      category: "ai-cinema",
       duration: "0:45",
       views: "142K",
       thumbnail: "assets/images/thumb-showcase-1.jpg",
       localSrc: "assets/videos/vireon-showcase-1.mp4",
       gdriveId: "1RHHxykhGWWMD3Lo0r1Yvz7P4LKZ7WlrJ",
-      highlight: "Generated $3.2M pipeline for B2B tech firm"
+      highlight: "🎬 From Concept to Reality • Zero Massive Studio Overhead"
     },
     {
       id: "video-2",
-      title: "Viral Creator Growth & Video Mastery",
-      subtitle: "Hollywood-grade short-form editing, hook psychology & brand authority.",
-      category: "creator",
+      title: "From Idea to Production: Client Brand Commercial",
+      subtitle: "See how we took a business idea from blank space to a fully produced high-converting commercial ad campaign.",
+      category: "commercials",
       duration: "0:38",
       views: "890K",
       thumbnail: "assets/images/thumb-showcase-2.jpg",
       localSrc: "assets/videos/vireon-showcase-2.mp4",
       gdriveId: "1RW3MEemueowuFSJHqmyLDJ_p0gBpCwk0",
-      highlight: "Scaled founder from 2K to 240K followers in 90 days"
+      highlight: "🚀 Produced for Client Business • Idea to High-Converting Ad"
     },
     {
       id: "video-3",
-      title: "Autonomous AI Sales & Marketing Engine",
-      subtitle: "24/7 AI lead qualification, voice outreach & omni-channel automation.",
-      category: "ai",
+      title: "Directing Worlds That Don't Exist: Meet Uzair (AI Director)",
+      subtitle: "Meet Uzair, AI Director & Art Director behind Vireon—directing impossible cinematic worlds to launch revolutionary brands.",
+      category: "director",
       duration: "0:52",
       views: "310K",
       thumbnail: "assets/images/thumb-showcase-3.jpg",
       localSrc: "assets/videos/vireon-showcase-3.mp4",
       gdriveId: "1IJJ4xWwU_bJyxc8YpoNBBRBoicc7w6bK",
-      highlight: "84% response rate with sub-minute lead outreach"
+      highlight: "⚡ Directing Worlds That Don't Exist • Meet Uzair (Vireon Art Director)"
     }
   ],
 
