@@ -1,6 +1,7 @@
 # Dependencies & binaries
 node_modules/
 cloudflared.exe
+scratch/
 *.log
 .DS_Store
 Thumbs.db
