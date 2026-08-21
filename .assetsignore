@@ -1,0 +1,13 @@
+node_modules/
+node_modules/**
+scratch/
+scratch/**
+.git/
+.git/**
+.github/
+.github/**
+package.json
+package-lock.json
+vercel.json
+README.md
+*.log

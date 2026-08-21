@@ -1,0 +1,22 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "viron-2",
+  "compatibility_date": "2026-08-20",
+  "observability": {
+    "enabled": true
+  },
+  "assets": {
+    "directory": ".",
+    "exclude": [
+      "node_modules/**",
+      ".git/**",
+      ".github/**",
+      "scratch/**",
+      "package.json",
+      "package-lock.json",
+      "vercel.json",
+      "README.md",
+      "*.log"
+    ]
+  }
+}
